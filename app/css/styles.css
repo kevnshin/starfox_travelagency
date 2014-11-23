@@ -4010,7 +4010,7 @@ meta.foundation-mq-topbar {
   width: 100%;
   background: #2D2D2D; }
   .contain-to-grid .top-bar {
-    margin-bottom: -2.5%; }
+    margin-bottom: 0; }
 
 .fixed {
   width: 100%;
@@ -4037,7 +4037,7 @@ meta.foundation-mq-topbar {
   line-height: 60px;
   position: relative;
   background: #2D2D2D;
-  margin-bottom: -2.5%; }
+  margin-bottom: 0; }
   .top-bar ul {
     margin-bottom: 0;
     list-style: none; }
@@ -4344,7 +4344,7 @@ meta.foundation-mq-topbar {
   .contain-to-grid .top-bar {
     max-width: 68.75rem;
     margin: 0 auto;
-    margin-bottom: -2.5%; }
+    margin-bottom: 0; }
   .top-bar-section {
     transition: none 0 0;
     left: 0 !important; }
@@ -5586,6 +5586,9 @@ header {
     header nav.top-bar {
       border-radius: 5px;
       margin-bottom: -2.5%; } }
+  @media only screen and (max-width: 40em) {
+    header nav.top-bar {
+      background-color: red; } }
   header nav.top-bar ul.title-area {
     background-color: blue; }
     @media only screen and (max-width: 40em) {

@@ -50,7 +50,7 @@ header {
     font-size: 25px;
   }
 
-
+  
 
 
   nav.top-bar {
@@ -62,10 +62,15 @@ header {
         
     }
 
+    @media #{$small-only}{
+
+      background-color: red;
+          
+    }
+
 
     ul.title-area {
       background-color: blue;
-
 
       @media #{$small-only}{
         display: inline-block;

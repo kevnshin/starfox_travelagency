@@ -1,11 +1,12 @@
 @import "partials/settings";
 @import "../bower_components/foundation/scss/foundation";
 
+// General Styles
+
 $lightBlue: #8EC5C5;
 $body_gray: #5B5B5B;
 $nav_header_buttonShadow_gray: #2D2D2D;
 
-// General Styles
 .bold {
 
   font-weight: 700;
@@ -24,6 +25,11 @@ header {
   text-align: center;
   padding-top: 50px;
 
+  @media #{$small-only}{
+    padding-top: 5px;
+    background-image: none;
+  }
+
   div#logo{
 
     background-image: url('/images/logo.png');
@@ -31,6 +37,9 @@ header {
     height: 76px;
     display: block;
     margin: auto;
+    @media #{$small-only}{
+      display: none;
+    }
 
   }
 
@@ -42,20 +51,61 @@ header {
   }
 
 
+
+
   nav.top-bar {
 
-    border-radius: 5px;
+    @media #{$medium-up}{
+
+      border-radius: 5px;
+      margin-bottom: -2.5%;
+        
+    }
+
+
+    ul.title-area {
+      background-color: blue;
+
+
+      @media #{$small-only}{
+        display: inline-block;
+        width: 150px;
+          
+      }
+
+      li.toggle-topbar {
+        display: inline-block;
+        background-color: yellow;
+
+      }
+
+    }
 
 
     section.top-bar-section{
+      
+      // background-color: yellow;
+      width: 100%;
+      
+      ul.right{
+        @media #{$medium-up}{
 
-      ul{
-        margin: 0px 270px; //centering the nav-bar
+            width: 100%;
+            text-align: center;
+            // background-color: red;
+        
+        }
 
         li{
+            @media #{$medium-up}{
+
+              display: inline-block;
+              float: none;
+
+            }
 
           a{
-
+            // background-color: green;
             &:hover {
               font-weight: 400;
             }

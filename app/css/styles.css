@@ -5564,20 +5564,46 @@ header {
   background-color: #8EC5C5;
   text-align: center;
   padding-top: 50px; }
+  @media only screen and (max-width: 40em) {
+    header {
+      padding-top: 5px;
+      background-image: none; } }
   header div#logo {
     background-image: url('/images/logo.png');
     width: 154px;
     height: 76px;
     display: block;
     margin: auto; }
+    @media only screen and (max-width: 40em) {
+      header div#logo {
+        display: none; } }
   header h1.title {
     display: inline-block;
     margin: 5px auto 30px auto;
     font-weight: 300;
     font-size: 25px; }
-  header nav.top-bar {
-    border-radius: 5px; }
-    header nav.top-bar section.top-bar-section ul {
-      margin: 0px 270px; }
-      header nav.top-bar section.top-bar-section ul li a:hover {
-        font-weight: 400; }
+  @media only screen and (min-width:40.063em) {
+    header nav.top-bar {
+      border-radius: 5px;
+      margin-bottom: -2.5%; } }
+  header nav.top-bar ul.title-area {
+    background-color: blue; }
+    @media only screen and (max-width: 40em) {
+      header nav.top-bar ul.title-area {
+        display: inline-block;
+        width: 150px; } }
+    header nav.top-bar ul.title-area li.toggle-topbar {
+      display: inline-block;
+      background-color: yellow; }
+  header nav.top-bar section.top-bar-section {
+    width: 100%; }
+    @media only screen and (min-width:40.063em) {
+      header nav.top-bar section.top-bar-section ul.right {
+        width: 100%;
+        text-align: center; } }
+    @media only screen and (min-width:40.063em) {
+      header nav.top-bar section.top-bar-section ul.right li {
+        display: inline-block;
+        float: none; } }
+    header nav.top-bar section.top-bar-section ul.right li a:hover {
+      font-weight: 400; }

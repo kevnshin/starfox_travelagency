@@ -7,6 +7,13 @@ $lightBlue: #8EC5C5;
 $body_gray: #5B5B5B;
 $mobileNavBar_gray: #333333;
 $nav_header_buttonShadow_gray: #2D2D2D;
+$button_gray: #666666;
+$button_hover_gray: #444444;
+$buttonborder_hover_gray: #222222;
+$buttontext_hover_gray: #cccccc;
+
+
+$OpenSans: 'Open Sans', sans-serif;
 
 .bold {
 
@@ -229,3 +236,85 @@ header {
 
 }
 
+
+div#basic_info {
+
+  margin-top: 75px;
+  background-color: $lightBlue;
+  border-radius: 5px;
+
+  @media #{$large-only}{
+    width: 1070px;
+  }
+
+  
+
+  div.info_text {
+
+    // background-color: red;
+    padding: 50px 40px 45px 70px;
+
+    h3{
+        color: $mobileNavBar_gray;
+        font-size: 32px;
+        font-weight: 300;
+
+        span.bold{
+          font-weight: 400;
+        }
+
+    }
+
+  }
+
+  div.info_pics {
+
+    // background-color: yellow;
+    text-align: center;
+
+    div.blackship {
+
+      background-image: url('/images/ship.png');
+      width: 282px;
+      height: 167px;
+      margin-top: -22px;
+      margin-bottom: 50px;
+
+    }
+
+    button {
+      width: 308px;
+      background-color: $button_gray;
+      color: #fff;
+      font-family: $OpenSans;
+      font-weight: 300;
+      font-size: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 8px solid $nav_header_buttonShadow_gray;
+      -webkit-transition: color 1s ease-in-out; /* For Safari 3.1 to 6.0 */
+      transition: color 1s ease-in-out;
+      -webkit-transition: background-color 1s ease-in-out; /* For Safari 3.1 to 6.0 */
+      transition: background-color 1s ease-in-out;
+
+      @media #{$large-only}{
+
+        &:hover {  
+
+          background-color: $button_hover_gray;
+          color: $buttontext_hover_gray;
+          border-color: $buttonborder_hover_gray;
+
+        }
+      
+      }
+
+
+    }
+
+
+  }
+
+
+
+}

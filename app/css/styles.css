@@ -4238,7 +4238,7 @@ meta.foundation-mq-topbar {
           color: #FFFFFF; }
     .top-bar-section ul li:hover:not(.has-form) > a {
       background-color: #555555;
-      background: #2D2D2D;
+      background: #333333;
       color: #FFFFFF; }
     .top-bar-section ul li.active > a {
       background: #008CBA;
@@ -4358,7 +4358,7 @@ meta.foundation-mq-topbar {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
       background-color: #555555;
-      background: #2D2D2D;
+      background: #333333;
       color: #FFFFFF; }
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 25px;
@@ -4366,7 +4366,7 @@ meta.foundation-mq-topbar {
       background: #333333; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background-color: #555555;
-        background: #2D2D2D; }
+        background: #333333; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       padding: 0 25px;
       line-height: 60px;
@@ -4436,7 +4436,7 @@ meta.foundation-mq-topbar {
       .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
         color: #FFFFFF;
         background-color: #555555;
-        background: #2D2D2D; }
+        background: #333333; }
       .top-bar-section .dropdown li label {
         white-space: nowrap;
         background: #333333; }
@@ -4466,7 +4466,7 @@ meta.foundation-mq-topbar {
         left: 100%; }
   .no-js .top-bar-section ul li:hover > a {
     background-color: #555555;
-    background: #2D2D2D;
+    background: #333333;
     color: #FFFFFF; }
   .no-js .top-bar-section ul li:active > a {
     background: #008CBA;
@@ -5652,3 +5652,48 @@ header {
     @media only screen and (min-width:40.063em) {
       header nav.top-bar section.top-bar-section ul.right li a:hover {
         font-weight: 400; } }
+
+div#basic_info {
+  margin-top: 75px;
+  background-color: #8EC5C5;
+  border-radius: 5px; }
+  @media only screen and (min-width:64.063em) and (max-width:90em) {
+    div#basic_info {
+      width: 1070px; } }
+  div#basic_info div.info_text {
+    padding: 50px 40px 45px 70px; }
+    div#basic_info div.info_text h3 {
+      color: #333333;
+      font-size: 32px;
+      font-weight: 300; }
+      div#basic_info div.info_text h3 span.bold {
+        font-weight: 400; }
+  div#basic_info div.info_pics {
+    text-align: center; }
+    div#basic_info div.info_pics div.blackship {
+      background-image: url('/images/ship.png');
+      width: 282px;
+      height: 167px;
+      margin-top: -22px;
+      margin-bottom: 50px; }
+    div#basic_info div.info_pics button {
+      width: 308px;
+      background-color: #666666;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      font-size: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 8px solid #2D2D2D;
+      -webkit-transition: color 1s ease-in-out;
+      /* For Safari 3.1 to 6.0 */
+      transition: color 1s ease-in-out;
+      -webkit-transition: background-color 1s ease-in-out;
+      /* For Safari 3.1 to 6.0 */
+      transition: background-color 1s ease-in-out; }
+      @media only screen and (min-width:64.063em) and (max-width:90em) {
+        div#basic_info div.info_pics button:hover {
+          background-color: #444444;
+          color: #cccccc;
+          border-color: #222222; } }

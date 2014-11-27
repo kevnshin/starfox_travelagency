@@ -5659,7 +5659,12 @@ div#basic_info {
   @media only screen and (min-width:40.063em) {
     div#basic_info {
       border-radius: 5px; } }
-  @media only screen and (min-width:64.063em) and (max-width:90em) {
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    div#basic_info {
+      margin-top: 65px;
+      width: 865px;
+      text-align: center; } }
+  @media only screen and (min-width:64.063em) {
     div#basic_info {
       margin-top: 75px;
       width: 1070px; } }
@@ -5667,24 +5672,30 @@ div#basic_info {
     display: block;
     background-image: url('/images/ship.png');
     width: 282px;
-    height: 167px;
-    margin-top: -22px;
-    margin-bottom: 50px; }
+    height: 167px; }
     @media only screen and (max-width: 40em) {
       div#basic_info div.blackship {
-        margin-top: -5px; } }
-    @media only screen and (max-width:40.063em) {
-      div#basic_info div.blackship {
         margin-left: auto;
-        margin-right: auto; } }
+        margin-right: auto;
+        margin-top: -5px; } }
+    @media only screen and (min-width:40.063em) and (max-width:64em) {
+      div#basic_info div.blackship {
+        top: -7px;
+        left: 293px;
+        position: absolute; } }
+    @media only screen and (min-width:64.063em) {
+      div#basic_info div.blackship {
+        margin-top: -22px;
+        margin-bottom: 50px; } }
   div#basic_info div.info_text {
     padding: 50px 40px 45px 70px; }
     @media only screen and (max-width: 40em) {
       div#basic_info div.info_text {
         padding: 50px 70px 50px 70px; } }
-    @media only screen and (max-width:40.063em) {
+    @media only screen and (min-width:40.063em) and (max-width:64em) {
       div#basic_info div.info_text {
-        text-align: center; } }
+        padding: 175px 70px 25px 70px;
+        position: relative; } }
     div#basic_info div.info_text h3 {
       color: #333333;
       font-size: 32px;
@@ -5718,7 +5729,10 @@ div#basic_info {
           width: 473px;
           margin-top: -13px;
           margin-bottom: 65px; } }
-      @media only screen and (min-width:64.063em) and (max-width:90em) {
+      @media only screen and (min-width:40.063em) and (max-width:64em) {
+        div#basic_info div.info_pics button {
+          margin-bottom: 65px; } }
+      @media only screen and (min-width:64.063em) {
         div#basic_info div.info_pics button:hover {
           background-color: #444444;
           color: #cccccc;

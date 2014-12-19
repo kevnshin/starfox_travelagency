@@ -1,10 +1,21 @@
-p hello #{ 5 + 2 }
-p
-    if (myname === "so annoying")
-      span ejs tags are annoying
-    else
-      | your name is #{myname}
+mixin render_pet(pet)
+  li
+    | hello
+    = pet
 
-ul
-  each pet in mypets
-    li #{ pet }
+extends ./layout.jade
+
+block content
+  p hello #{ 5 + 2 }
+  p
+      if (myname === "so annoying")
+        span ejs tags are annoying
+      else
+        | your name is #{myname}
+
+  ul
+    each pet in mypets
+      +render_pet(pet)
+
+block copyright
+  | &copy: Marifel 2014

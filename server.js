@@ -6,31 +6,27 @@ var app = express();
 
 // MIDDLEWARE
 app.use(express.static('public'));
-app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'jade');
 
 
 // ROUTES
 
 app.get('/', function (req, res) {
-  res.render('./index.ejs', {
+
+  var locals = {
     myname: "kevin",
+  };
 
-    mypets: [
-      "mochi",
-      "mochi",
-      "boba",
-      "cookie",
-      "cat"
-    ]
+  locals.mypets = [
+    "mochi",
+    "mochi",
+    "boba",
+    "cookie",
+    "cat"
+  ];
 
-  });
+  res.render('./index', locals);
+
 });
-
-
-
-
-
-
-
 
 module.exports.app = app;

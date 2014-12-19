@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starfox Travel Agency</title>
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <header>
+    <div id="logo" class="hide-for-small"></div>
+    <h1 class="title hide-for-small"><span class="bold">StarFox</span> Intergalactic Travel Agency</h1>
+    
+    <div id="navbar_container">
+      <div class="row">
+        <div class="small-12 medium-11 large-12 medium-centered columns">
+          <nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area show-for-small-only">
+              <li class="title_icon">
+                <a href="#">
+                  <div class="space_smallIcon"></div>
+                  <h3>
+                    <span class="bold">Star</span>Fox
+                  </h3>
+                </a>
+              </li><!-- end .title_icon -->
+
+              <li class="toggle-topbar">
+                <a href="#">
+                  <div class="small_menuIcon"></div>
+                </a>
+              </li><!-- end .toggle-topbar -->
+            </ul><!-- end .title-area -->
+
+            <section class="top-bar-section">
+              <!-- Right Nav Section -->
+              <ul class="right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Interstellar Travel</a></li>
+              </ul>
+                
+            </section><!--end .top-bar-section -->
+          </nav>
+        </div><!--end .columns -->
+      </div><!--end .row -->
+    </div><!-- end #navbar_container -->
+  </header>
+
+  <div id="basic_info">
+    <div class="row">
+      <div class="small-12 medium-12 medium-centered large-8 large-uncentered columns">
+        <div class="info_text">
+          <div class="blackship hide-for-large-up"></div>
+          <h3>We will take you to the <span class="bold">Moon and Back</span>! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae leo est. Maegenas sit amet nisi tellus. Donec a consequat mi, ut sodales eros!</h3>
+        </div><!--end .info_text -->
+      </div><!--end columns -->
+
+      <div class="small-12 medium-11 medium-centered large-4 large-uncentered columns">
+        <div class="info_pics">
+          <div class="blackship show-for-large-up"></div>
+          <button>
+            Find Out More
+          </button>
+        </div><!--end .info_pics -->
+      </div><!--end .columns -->
+
+    </div>
+  </div><!-- #basic_info -->
+
+  <div id="pricing_info">
+    <div class="row">
+      <div class="small-12 medium-12 large-4 columns">
+        <a class="destination_link" href="#">
+          <div class="destination" id="moon">
+            <h3 class="title">To the Moon</h3>
+            <h2 class="price">$30,000</h2>
+            <p class="description">Covers travel fare, lodgings, and meals for 3 months in space.</p>
+          </div><!--end #moon -->
+        </a><!-- end .destination_link -->
+      </div><!--end .columns -->
+
+      <div class="small-12 medium-12 large-4 columns">
+        <a class="destination_link" href="#">
+          <div class="destination" id="earth">
+            <h3 class="title">Just Around Earth</h3>
+            <h2 class="price">$10,000</h2>
+            <p class="description">Covers travel fare, lodgings, and meals for 2 weeks in space.</p>
+          </div><!--end #earth -->
+        </a><!-- end .destination_link -->
+      </div><!--end .columns -->
+     
+      <div class="small-12 medium-12 large-4 columns">
+     
+        <a href="#" class="destination_link"></a>
+          <div class="destination" id="jupiter">
+            <h4 class="title">Just to Jupiter</h4>
+            <h2 class="price">$26,000</h2>
+          </div><!--end #jupiter -->
+        </a><!-- end .destination_link -->
+
+        <a href="#" class="destination_link"></a>
+          <div class="destination" id="center_earth">
+            <h4 class="title">Center of the Earth</h4>
+            <h2 class="price">$156,000</h2>
+          </div><!--end #center_earth -->
+        </a><!-- end .destination_link -->
+
+       
+          <div id="more_deals">
+            <h2>More Deals</h2>
+            <div id="arrow"></div>
+          </div><!--end #more_deals -->
+
+
+      </div><!--end .columns-->
+
+
+    </div><!--end .row -->
+  </div><!--end #pricing_info -->
+
+
+
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/foundation/js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
